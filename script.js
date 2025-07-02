@@ -178,27 +178,27 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'busntaxi',
             name: 'BusnTaxi.com',
             type: 'client',
-            image: 'https://placehold.co/600x400/8a2be2/FFFFFF?text=BusnTaxi.com',
+            image: 'screenshot1.png',
             description: 'A comprehensive online platform for booking buses and taxis, designed for seamless user experience. I contributed to both front-end and back-end development, focusing on booking flows and UI responsiveness.',
             technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'MongoDB', 'Express.js'],
-            liveLink: 'https://busntaxi.com',
+            liveLink: 'https://jist-11.github.io/busntaxi.com/',
             githubLink: null
         },
         {
             id: 'personal-portfolio',
             name: 'Personal Portfolio',
             type: 'personal',
-            image: 'https://placehold.co/600x400/6a0dad/FFFFFF?text=My+Portfolio',
+            image: 'screenshot2.png',
             description: 'This very website! Built from scratch to showcase my skills in modern web development, including interactive UI, animations, and responsive design, without relying on external frameworks.',
             technologies: ['HTML', 'CSS', 'JavaScript'],
             liveLink: '#', // Link to itself
-            githubLink: 'https://github.com/manan_dev/portfolio-website' // Mock GitHub link
+            githubLink: 'https://jist-11.github.io/manan.dev/' // Mock GitHub link
         },
         {
             id: 'e-commerce-dashboard',
             name: 'E-commerce Dashboard',
             type: 'personal',
-            image: 'https://placehold.co/600x400/9b59b6/FFFFFF?text=E-commerce+Dashboard',
+            image: 'screenshot3.png',
             description: 'A responsive admin dashboard for managing e-commerce operations, including product listings, order management, and sales analytics. Features dynamic charts and data tables.',
             technologies: ['HTML', 'CSS', 'JavaScript', 'Chart.js'],
             liveLink: 'https://example.com/ecommerce-dashboard', // Mock live link
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'task-manager-app',
             name: 'Task Manager App',
             type: 'personal',
-            image: 'https://placehold.co/600x400/be93d4/FFFFFF?text=Task+Manager',
+            image: 'https://placehold.co/600x400/be93d4/FFFFFF?text=Coming+Soon',
             description: 'A simple, intuitive web-based task manager application allowing users to add, delete, and mark tasks as complete. Features local storage persistence and a clean interface.',
             technologies: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'],
             liveLink: 'https://example.com/task-manager', // Mock live link
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'blog-platform',
             name: 'Simple Blog Platform',
             type: 'client',
-            image: 'https://placehold.co/600x400/8a2be2/FFFFFF?text=Blog+Platform',
+            image: 'https://placehold.co/600x400/8a2be2/FFFFFF?text=Coming+Soon',
             description: 'Developed a basic blog platform for a small business to publish articles and engage with their audience. Includes a simple content management system for easy updates.',
             technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
             liveLink: 'https://example.com/blog', // Mock live link
