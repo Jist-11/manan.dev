@@ -4,409 +4,1103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manan - 14-year-old Full-Stack Developer</title>
-    <meta name="description"
-        content="Manan is a 14-year-old self-taught full-stack web developer building modern, responsive websites for businesses. Specializing in HTML, CSS, JavaScript, and React.">
-    <meta name="keywords"
-        content="Manan, full-stack developer, web developer, freelancer, HTML, CSS, JavaScript, React, Linux, website development, India, portfolio">
-    <meta name="author" content="Manan">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jist-11.github.io/manan.dev/"> <!-- Replace with actual URL -->
-    <meta property="og:title" content="Manan - 14-year-old Full-Stack Developer">
-    <meta property="og:description"
-        content="Manan is a 14-year-old self-taught full-stack web developer building modern, responsive websites for businesses.">
-    <meta property="og:image" content="https://placehold.co/1200x630/000000/FFFFFF?text=Manan+Portfolio">
-    <!-- Replace with actual image -->
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://jist-11.github.io/manan.dev/"> <!-- Replace with actual URL -->
-    <meta property="twitter:title" content="Manan - 14-year-old Full-Stack Developer">
-    <meta property="twitter:description"
-        content="Manan is a 14-year-old self-taught full-stack web developer building modern, responsive websites for businesses.">
-    <meta property="twitter:image" content="https://placehold.co/1200x630/000000/FFFFFF?text=Manan+Portfolio">
-    <!-- Replace with actual image -->
-
-    <!-- Favicon -->
-    <link rel="icon" href="https://placehold.co/32x32/000000/FFFFFF?text=M" type="image/x-icon">
-
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Manan",
-      "jobTitle": "Full-Stack Web Developer",
-      "url": "https://www.mananportfolio.com/",
-      "image": "https://placehold.co/200x200/000000/FFFFFF?text=Manan",
-      "sameAs": [
-        "https://www.instagram.com/jist_11",
-        "https://github.com/jist-11",
-      ],
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Self-Taught"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "India"
-      }
-    }
-    </script>
-
-    <!-- Custom CSS -->
+    <title>Manan Verma - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header class="header">
-        <nav class="navbar">
-            <a href="#" class="logo">Manan.dev</a>
-            <div class="nav-links">
-                <a href="#hero" class="nav-link active">Home</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Manan.dev</div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#tech-stack" class="nav-link">Tech Stack</a>
+                <a href="#hacking-toolkit" class="nav-link">Hacking Toolkit</a>
+                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="nav-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section section">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm Manan.</h1>
-                <p class="hero-subtitle">A 14-year-old self-taught full-stack developer from India.</p>
-                <p class="hero-tagline">
-                    I <span class="typewriter"></span>
-                </p>
-                <button class="btn btn-primary scroll-to-contact">Hire Me</button>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services-section section">
-            <h2 class="section-title">My Services</h2>
-            <div class="services-grid">
-                <!-- Service Card 1: Web Design -->
-                <div class="service-card" data-service="web-design">
-                    <div class="card-front">
-                        <i class="fas fa-paint-brush service-icon"></i>
-                        <h3>Web Design</h3>
-                        <p>Crafting visually stunning and user-friendly interfaces.</p>
-                        <button class="btn-flip">Learn More</button>
-                    </div>
-                    <div class="card-back">
-                        <h4>Intuitive & Modern Design</h4>
-                        <p>I focus on creating beautiful, responsive designs that provide an excellent user experience
-                            across all devices. From wireframes to final pixel-perfect layouts.</p>
-                        <ul>
-                            <li>UI/UX Prototyping</li>
-                            <li>Responsive Layouts</li>
-                            <li>Branding Integration</li>
-                        </ul>
-                        <button class="btn-flip back">Back</button>
-                    </div>
-                </div>
-
-                <!-- Service Card 2: Web Development -->
-                <div class="service-card" data-service="web-development">
-                    <div class="card-front">
-                        <i class="fas fa-code service-icon"></i>
-                        <h3>Web Development</h3>
-                        <p>Bringing designs to life with clean, efficient, and scalable code.</p>
-                        <button class="btn-flip">Learn More</button>
-                    </div>
-                    <div class="card-back">
-                        <h4>Robust & Scalable Solutions</h4>
-                        <p>I build dynamic and functional websites using the latest web technologies. From front-end
-                            interactivity to back-end logic and database management.</p>
-                        <ul>
-                            <li>Front-end Development (HTML, CSS, JS)</li>
-                            <li>Back-end Development (Node.js, Python)</li>
-                            <li>Database Integration (MongoDB, SQL)</li>
-                        </ul>
-                        <button class="btn-flip back">Back</button>
-                    </div>
-                </div>
-
-                <!-- Service Card 3: UI/UX Optimization -->
-                <div class="service-card" data-service="ui-ux-optimization">
-                    <div class="card-front">
-                        <i class="fas fa-lightbulb service-icon"></i>
-                        <h3>UI/UX Optimization</h3>
-                        <p>Enhancing existing websites for better user experience and conversion.</p>
-                        <button class="btn-flip">Learn More</button>
-                    </div>
-                    <div class="card-back">
-                        <h4>Improving User Journeys</h4>
-                        <p>I analyze user behavior and implement improvements to make your website more intuitive,
-                            engaging, and effective at achieving your business goals.</p>
-                        <ul>
-                            <li>Usability Audits</li>
-                            <li>Performance Tuning</li>
-                            <li>Conversion Rate Optimization</li>
-                        </ul>
-                        <button class="btn-flip back">Back</button>
-                    </div>
-                </div>
-
-                <!-- Service Card 4: Maintenance & Support -->
-                <div class="service-card" data-service="maintenance-support">
-                    <div class="card-front">
-                        <i class="fas fa-tools service-icon"></i>
-                        <h3>Maintenance & Support</h3>
-                        <p>Ensuring your website remains secure, updated, and performs optimally.</p>
-                        <button class="btn-flip">Learn More</button>
-                    </div>
-                    <div class="card-back">
-                        <h4>Reliable Ongoing Care</h4>
-                        <p>I offer comprehensive maintenance packages to keep your website running smoothly, including
-                            regular updates, security checks, and bug fixes.</p>
-                        <ul>
-                            <li>Regular Updates</li>
-                            <li>Security Monitoring</li>
-                            <li>Technical Support</li>
-                        </ul>
-                        <button class="btn-flip back">Back</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio-section section">
-            <h2 class="section-title">My Portfolio</h2>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="client">Client Work</button>
-                <button class="filter-btn" data-filter="personal">Personal Projects</button>
-            </div>
-            <div class="portfolio-grid">
-                <!-- Project cards will be injected here by JavaScript -->
-            </div>
-
-            <!-- Project Modal -->
-            <div id="project-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-button">&times;</span>
-                    <img id="modal-image" src="" alt="Project Screenshot">
-                    <h3 id="modal-title"></h3>
-                    <p id="modal-description"></p>
-                    <p id="modal-tech"></p>
-                    <div class="modal-buttons">
-                        <a id="modal-live-link" href="#" target="_blank" class="btn btn-secondary"
-                            style="display: none;">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                        <a id="modal-github-link" href="#" target="_blank" class="btn btn-secondary"
-                            style="display: none;">GitHub <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="pricing" class="pricing-section section">
-            <h2 class="section-title">Pricing Plans</h2>
-            <div class="pricing-toggle">
-                <span class="toggle-label">Monthly For 3 Months</span>
-                <label class="switch">
-                    <input type="checkbox" id="pricing-toggle-switch">
-                    <span class="slider round"></span>
-                </label>
-                <span class="toggle-label">One-Time</span>
-            </div>
-            <div class="pricing-grid">
-                <!-- Basic Plan -->
-                <div class="pricing-card">
-                    <h3>Basic Website</h3>
-                    <p class="price" data-monthly="₹70/M" data-onetime="₹200">₹70<span class="period">/month</span></p>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> 5 Pages</li>
-                        <li><i class="fas fa-check-circle"></i> Responsive Design</li>
-                        <li><i class="fas fa-check-circle"></i> Basic SEO</li>
-                        <li><i class="fas fa-times-circle"></i> No Custom Features</li>
-                        <li><i class="fas fa-times-circle"></i> Limited Support</li>
-                    </ul>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdtzNJjXkSmbQIyXDqigO7yzJLCFSJZJbfOHbPO1taHfa37w/viewform"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">Choose plan</a>
-                </div>
-
-                <!-- Standard Plan -->
-                <div class="pricing-card featured">
-                    <h3>Standard Website</h3>
-                    <p class="price" data-monthly="₹120/M" data-onetime="₹300">₹120<span class="period">/month</span>
-                    </p>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> 10 Pages</li>
-                        <li><i class="fas fa-check-circle"></i> Responsive Design</li>
-                        <li><i class="fas fa-check-circle"></i> Advanced SEO</li>
-                        <li><i class="fas fa-check-circle"></i> Basic Custom Features</li>
-                        <li><i class="fas fa-times-circle"></i> No Database</li>
-                    </ul>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdtzNJjXkSmbQIyXDqigO7yzJLCFSJZJbfOHbPO1taHfa37w/viewform"target="_blank" rel="noopener noreferrer" class="btn btn-primary">Choose plan</a>
-
-                </div>
-
-                <!-- Premium Plan -->
-                <div class="pricing-card">
-                    <h3>Premium Website</h3>
-                    <p class="price" data-monthly="₹150/M" data-onetime="₹400">₹150<span class="period">/month</span>
-                    </p>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Unlimited Pages</li>
-                        <li><i class="fas fa-check-circle"></i> Responsive Design</li>
-                        <li><i class="fas fa-check-circle"></i> Full SEO Optimization</li>
-                        <li><i class="fas fa-check-circle"></i> Custom Features</li>
-                        <li><i class="fas fa-check-circle"></i> Database Integration</li>
-                    </ul>
-                   <a href="https://docs.google.com/forms/d/e/1FAIpQLScdtzNJjXkSmbQIyXDqigO7yzJLCFSJZJbfOHbPO1taHfa37w/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Choose plan</a>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- About Me Section -->
-        <section id="about" class="about-section section">
-            <h2 class="section-title">About Manan</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm Manan, a 14-year-old self-taught full-stack web developer from India. My journey into
-                        coding began with a fascination for how websites work, leading me to dive deep into HTML, CSS,
-                        and JavaScript. What started as a hobby quickly turned into a passion for building robust and
-                        beautiful web solutions.</p>
-                    <p>I specialize in creating dynamic, user-friendly, and responsive websites for businesses of all
-                        sizes. My goal is to help clients establish a strong online presence and achieve their digital
-                        objectives. I'm also a big fan of Linux and enjoy exploring new technologies.</p>
-                    <p>One of my notable client projects includes <a href="https://jist-11.github.io/busntaxi.com/" target="_blank"
-                            rel="noopener noreferrer">BusnTaxi.com</a>, where I contributed to developing a seamless
-                        online platform. I'm always eager to learn, innovate, and take on new challenges.</p>
-                </div>
-                <div class="about-skills">
-                    <h3>My Skills</h3>
-                    <div class="skill-chart-container">
-                        <canvas id="skillsChart"></canvas>
-                    </div>
-                </div>
-            </div>
-            <div class="about-timeline">
-                <h3>My Journey</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h4>Age 9: First "Hello World"</h4>
-                            <p>Discovered Python and wrote my first lines of code, sparking a lifelong passion.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h4>Age 12: Deep Dive into Web development</h4>
-                            <p>Started learning JavaScript, building interactive mini-projects and understanding web
-                                logic.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h4>Age 13: First Client Project</h4>
-                            <p>Successfully completed my first freelance project, gaining real-world experience.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h4>Age 14: Full-Stack Journey & BusnTaxi.com</h4>
-                            <p>Expanded into back-end technologies and contributed to significant projects like
-                                BusnTaxi.com.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section section">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-title">To order your own website, choose "Choose Plan" in pricing</p>
-            <p class="contact-intro">Have a project in mind or just want to say hello? Fill out the form below!</p>
-            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xovwbaqe" method="POST">
-                <!-- Replace with your Formspree ID -->
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required aria-required="true" placeholder="Your Name">
-                    <div class="error-message" id="name-error"></div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required aria-required="true"
-                        placeholder="your@example.com">
-                    <div class="error-message" id="email-error"></div>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required aria-required="true"
-                        placeholder="Project Inquiry">
-                    <div class="error-message" id="subject-error"></div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" required aria-required="true"
-                        placeholder="Tell me about your project..."></textarea>
-                    <div class="error-message" id="message-error"></div>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-                <div id="form-status" class="form-status"></div>
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; <span id="current-year"></span> Manan. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="https://instagram.com/jist_11" target="_blank" rel="noopener noreferrer"
-                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/jist-11" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/manan-verma-52b36b305/" target="_blank" rel="noopener noreferrer"
-                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <button id="back-to-top" class="btn btn-secondary back-to-top" aria-label="Back to Top">
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            <div class="theme-toggle-container">
-                <label for="theme-toggle" class="theme-toggle-label">
-                    <i class="fas fa-sun light-icon"></i>
-                    <input type="checkbox" id="theme-toggle" class="theme-toggle-switch"
-                        aria-label="Toggle light and dark mode">
-                    <span class="toggle-slider"></span>
-                    <i class="fas fa-moon dark-icon"></i>
-                </label>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </footer>
+    </nav>
 
-    <!-- Floating WhatsApp Button (injected by JS) -->
-    <div id="whatsapp-button-container"></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="animated-dots"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Manan Verma</h1>
+            <div class="hero-subtitle">
+                14-year-old <span id="typewriter" class="typewriter"></span>
+            </div>
+            <p class="hero-description">
+                Self-taught developer from Ghaziabad, India, passionate about ethical hacking,
+                AI-powered tools, and building the future of technology.
+            </p>
+            <div class="hero-social">
+                <a href="https://github.com/jist-11" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/manan-verma-52b36b305/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:mananvermaop@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="scroll-indicator" id="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
-    <!-- Custom JavaScript -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i class="fas fa-user"></i>
+                            <h3>Who I Am</h3>
+                        </div>
+                        <p>
+                            I'm a 14-year-old self-taught full-stack developer from Ghaziabad, India, with an
+                            insatiable curiosity for technology. My journey began with simple HTML and CSS,
+                            but quickly evolved into complex full-stack applications and ethical hacking projects.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i class="fas fa-code"></i>
+                            <h3>What I Do</h3>
+                        </div>
+                        <p>
+                            I specialize in building professional websites for local businesses, developing
+                            AI-powered tools like DiagnoSnap, and exploring the fascinating world of ethical
+                            hacking with tools like ESP32 and custom Python frameworks.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i class="fas fa-cogs"></i>
+                            <h3>My Mission</h3>
+                        </div>
+                        <p>
+                            My goal is to become a professional ethical hacker and bug bounty hunter within
+                            the next 1-2 years, while continuing to build innovative solutions that make
+                            technology more accessible and secure for everyone.
+                        </p>
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <span class="filename">manan_profile.py</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line"><span class="keyword">class</span> <span
+                                    class="class-name">MananVerma</span>:</div>
+                            <div class="code-line indent1"><span class="keyword">def</span> <span
+                                    class="function">__init__</span>(self):</div>
+                            <div class="code-line indent2">self.age = <span class="number">14</span></div>
+                            <div class="code-line indent2">self.location = <span class="string">"Ghaziabad,
+                                    India"</span></div>
+                            <div class="code-line indent2">self.role = <span class="string">"Full-Stack
+                                    Developer"</span></div>
+                            <div class="code-line indent2">self.passion = <span class="string">"Ethical Hacking"</span>
+                            </div>
+                            <div class="code-line indent2">self.current_project = <span class="string">"DiagnoSnap
+                                    AI"</span></div>
+                            <div class="code-line indent2">self.dream = <span class="string">"Bug Bounty Hunter"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-gradient="cyan-blue">
+                    <div class="project-header">
+                        <h3 class="project-title">BusnTaxi.com</h3>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Lead developer of a comprehensive taxi booking platform with full-stack architecture, real-time
+                        booking system, and payment integration.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">Stripe API</span>
+                    </div>
+                    <div class="project-status live">Live</div>
+                </div>
+
+                <div class="project-card" data-gradient="green-emerald">
+                    <div class="project-header">
+                        <h3 class="project-title">DiagnoSnap AI</h3>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        AI-powered pre-diagnosis tool using TensorFlow.js and Teachable Machine for medical image
+                        analysis and preliminary health assessments.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TensorFlow.js</span>
+                        <span class="tech-tag">Teachable Machine</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
+                    <div class="project-status development">In Development</div>
+                </div>
+
+                <div class="project-card" data-gradient="purple-pink">
+                    <div class="project-header">
+                        <h3 class="project-title">Local Business Websites</h3>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Professional websites for local businesses with custom animations, responsive design, and SEO
+                        optimization using vanilla JavaScript.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">GSAP</span>
+                        <span class="tech-tag">Three.js</span>
+                    </div>
+                    <div class="project-status multiple">Multiple Projects</div>
+                </div>
+
+                <div class="project-card" data-gradient="red-orange">
+                    <div class="project-header">
+                        <h3 class="project-title">ESP32 Black Hat Toolkit</h3>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Advanced penetration testing toolkit built on ESP32 with Wi-Fi deauthentication, packet
+                        sniffing, and network analysis capabilities.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">Arduino IDE</span>
+                        <span class="tech-tag">WiFi Libraries</span>
+                        <span class="tech-tag">Bluetooth</span>
+                    </div>
+                    <div class="project-status development">In Development</div>
+                </div>
+
+                <div class="project-card" data-gradient="yellow-red">
+                    <div class="project-header">
+                        <h3 class="project-title">Python Hacking Toolkit</h3>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Compact Python-based ethical hacking framework with webcam access, microphone recording, and
+                        stealth payload deployment features.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">PyAudio</span>
+                        <span class="tech-tag">Scapy</span>
+                        <span class="tech-tag">Cryptography</span>
+                    </div>
+                    <div class="project-status private">Private Repository</div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="cta-button">View All Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Tech Stack & Skills</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3 class="category-title frontend">Frontend Development</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span>React</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Next.js</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>TypeScript</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Tailwind CSS</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Three.js</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>GSAP</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 class="category-title backend">Backend Development</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span>Node.js</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Express.js</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>MongoDB</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>PostgreSQL</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Redis</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Socket.io</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 class="category-title ai">AI & Machine Learning</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span>TensorFlow.js</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Teachable Machine</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>OpenCV</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Python</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Scikit-learn</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Pandas</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 class="category-title security">Ethical Hacking & Security</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span>Kali Linux</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Burp Suite</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Wireshark</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Metasploit</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Nmap</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>OWASP</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 class="category-title hardware">Hardware & IoT</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span>ESP32</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Arduino</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Raspberry Pi</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Digispark</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>C++</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>MicroPython</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 class="category-title tools">Tools & Technologies</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span>Git</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Docker</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>AWS</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Firebase</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>Postman</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span>VS Code</span>
+                            <div class="skill-dots">
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                                <span class="dot active"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-footer">
+                <p>Constantly learning and experimenting with new technologies</p>
+                <div class="code-motto">
+                    <span class="prompt">$</span> while(alive) { learn(); build(); hack(); repeat(); }
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hacking Toolkit Section -->
+    <section id="hacking-toolkit" class="hacking-toolkit">
+        <div class="container">
+            <h2 class="section-title hacking">Ethical Hacking Toolkit</h2>
+            <div class="toolkit-intro">
+                <p>Educational and ethical security research tools</p>
+                <div class="warning-badge">
+                    ⚠️ All tools are developed for educational purposes and authorized security testing only
+                </div>
+            </div>
+
+            <div class="toolkit-tabs">
+                <button class="tab-button active" data-tab="wifi">📡 Wi-Fi Penetration Testing</button>
+                <button class="tab-button" data-tab="network">🔒 Network Security Tools</button>
+                <button class="tab-button" data-tab="hardware">⚡ Hardware Hacking</button>
+            </div>
+
+            <div class="toolkit-content">
+                <div class="tab-content active" id="wifi-content">
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <h3>ESP32 Deauther</h3>
+                                <span class="status active-dev">Active Development</span>
+                            </div>
+                            <p>Custom ESP32-based Wi-Fi deauthentication tool for network security testing</p>
+                            <div class="tool-features">
+                                <span class="feature">Monitor Mode</span>
+                                <span class="feature">Packet Injection</span>
+                                <span class="feature">AP Scanning</span>
+                                <span class="feature">Stealth Mode</span>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <h3>Wi-Fi Analyzer</h3>
+                                <span class="status testing">Testing Phase</span>
+                            </div>
+                            <p>Real-time wireless network analysis and vulnerability assessment tool</p>
+                            <div class="tool-features">
+                                <span class="feature">Signal Strength Mapping</span>
+                                <span class="feature">Encryption Analysis</span>
+                                <span class="feature">Network Discovery</span>
+                                <span class="feature">Vulnerability Scanning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="network-content">
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <h3>Python Payload Framework</h3>
+                                <span class="status private">Private Repository</span>
+                            </div>
+                            <p>Compact Python-based framework for educational penetration testing</p>
+                            <div class="tool-features">
+                                <span class="feature">Webcam Access</span>
+                                <span class="feature">Audio Recording</span>
+                                <span class="feature">Network Scanning</span>
+                                <span class="feature">System Information</span>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <h3>Packet Sniffer</h3>
+                                <span class="status beta">Beta Testing</span>
+                            </div>
+                            <p>Custom packet analysis tool built with Scapy for network traffic monitoring</p>
+                            <div class="tool-features">
+                                <span class="feature">Real-time Capture</span>
+                                <span class="feature">Protocol Analysis</span>
+                                <span class="feature">Traffic Filtering</span>
+                                <span class="feature">Export Capabilities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="hardware-content">
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <h3>ESP32 Black Hat Toolkit</h3>
+                                <span class="status active-dev">In Development</span>
+                            </div>
+                            <p>Comprehensive hardware-based penetration testing platform</p>
+                            <div class="tool-features">
+                                <span class="feature">Bluetooth Scanning</span>
+                                <span class="feature">RFID Cloning</span>
+                                <span class="feature">GPIO Manipulation</span>
+                                <span class="feature">Serial Communication</span>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <h3>Digispark Projects</h3>
+                                <span class="status experimental">Experimental</span>
+                            </div>
+                            <p>USB-based HID attack tools and automation scripts</p>
+                            <div class="tool-features">
+                                <span class="feature">Keystroke Injection</span>
+                                <span class="feature">USB Automation</span>
+                                <span class="feature">Payload Delivery</span>
+                                <span class="feature">Stealth Operations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <h3>Learning Path</h3>
+                <div class="path-grid">
+                    <div class="path-card">
+                        <h4>Current Focus</h4>
+                        <p>Advanced Wi-Fi security testing and hardware-based penetration tools</p>
+                    </div>
+                    <div class="path-card">
+                        <h4>Next Goals</h4>
+                        <p>Bug bounty hunting certification and advanced cryptography research</p>
+                    </div>
+                    <div class="path-card">
+                        <h4>Timeline</h4>
+                        <p>Professional ethical hacker within 1-2 years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Projects</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="role cyan-blue-gradient">Lead Full-Stack Developer</h3>
+                            <div class="company-info">
+                                <p class="company">BusnTaxi.com</p>
+                                <div class="experience-meta">
+                                    <span>📅 2023 - Present</span>
+                                    <span>💼 Freelance Project</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Leading the development of a comprehensive taxi booking platform with real-time features and
+                            payment integration.
+                        </p>
+                        <div class="achievements">
+                            <h4>Key Achievements:</h4>
+                            <div class="achievements-grid">
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Built complete full-stack architecture from scratch</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Implemented real-time booking system with Socket.io</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Integrated payment gateway and user authentication</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Optimized application performance and user experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Stripe API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="role green-emerald-gradient">Web Developer</h3>
+                            <div class="company-info">
+                                <p class="company">Local Businesses</p>
+                                <div class="experience-meta">
+                                    <span>📅 2022 - Present</span>
+                                    <span>💼 Freelance Services</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Creating professional websites for local businesses with focus on animations and user
+                            experience.
+                        </p>
+                        <div class="achievements">
+                            <h4>Key Achievements:</h4>
+                            <div class="achievements-grid">
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Developed 10+ professional business websites</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Implemented custom animations and interactive elements</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Achieved 95%+ client satisfaction rate</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Provided ongoing maintenance and SEO optimization</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">GSAP</span>
+                            <span class="tech-tag">Three.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="role purple-pink-gradient">AI Research Developer</h3>
+                            <div class="company-info">
+                                <p class="company">DiagnoSnap Project</p>
+                                <div class="experience-meta">
+                                    <span>📅 2023 - Present</span>
+                                    <span>💼 Personal Project</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Developing an AI-powered pre-diagnosis tool using machine learning for medical image
+                            analysis.
+                        </p>
+                        <div class="achievements">
+                            <h4>Key Achievements:</h4>
+                            <div class="achievements-grid">
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Integrated TensorFlow.js with Teachable Machine</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Built image preprocessing and analysis pipeline</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Achieved 85%+ accuracy in preliminary testing</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Designing user-friendly interface for medical professionals</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-tech">
+                            <span class="tech-tag">TensorFlow.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="role red-orange-gradient">Security Researcher</h3>
+                            <div class="company-info">
+                                <p class="company">Independent Research</p>
+                                <div class="experience-meta">
+                                    <span>📅 2023 - Present</span>
+                                    <span>💼 Educational</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Developing ethical hacking tools and studying cybersecurity through hands-on projects and
+                            research.
+                        </p>
+                        <div class="achievements">
+                            <h4>Key Achievements:</h4>
+                            <div class="achievements-grid">
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Built ESP32-based penetration testing tools</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Developed Python-based security analysis frameworks</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Studied advanced Wi-Fi security and network protocols</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="bullet"></div>
+                                    <p>Following structured ethical hacking curriculum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">Kali Linux</span>
+                            <span class="tech-tag">Wireshark</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="whats-next">
+                <h3>What's Next?</h3>
+                <p>
+                    Currently focusing on advancing my ethical hacking skills and building more AI-powered solutions.
+                    Open to collaborating on innovative projects and learning opportunities.
+                </p>
+                <button class="cta-button">Let's Collaborate</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always excited to collaborate on innovative projects, discuss new technologies,
+                        or share knowledge about ethical hacking and development. Whether you're looking for
+                        a developer, have a cool project idea, or just want to chat about tech, feel free to reach out!
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Ghaziabad, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>mananvermaop@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Available</h4>
+                                <p>Mon - Sat (After School Hours)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/jist-11" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/manan-verma-52b36b305/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:mananvermaop@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="quick-response">
+                <h3>Quick Response Time</h3>
+                <p>
+                    I typically respond to messages within 24-48 hours. For urgent matters,
+                    please mention it in your subject line!
+                </p>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("yg732xHhH9cxSCkmA");
+        })();
+    </script>
 </body>
 
 </html>
